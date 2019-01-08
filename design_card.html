@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+
+
+    <title>Карточка товара</title>
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Заказ обратного звонка</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <input type = "submit" class = "send_mess" value = "Отправить"/>
+    </form>
+</div>
+
+<div class="popup map-pp">
+    <a class="close1" href="#">X</a>
+    <div id = "mapfirm"></div>
+</div>
+
+<div class = "float__menu">
+    <a class = "hide__menu" href = "javascript:void(0);">X</a>
+    <ul>
+        <li><a href = "">Компания</a></li>
+        <li><a href = "">Каталог оборудования</a></li>
+        <li><a href = "">Услуги</a></li>
+        <li class = "active"><a href = "">Портфолио</a></li>
+        <li><a href = "">Обучение</a></li>
+        <li><a href = "">Клиенты и партнеры</a></li>
+        <li><a href = "">Новости</a></li>
+        <li><a href = "">Контакты</a></li>
+        <li><a href = "">Контакты</a></li>
+    </ul>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <a href = "javascript:void(0);" class = "show_menu"><img src = "images/gamburger.png" /></a>
+        <div class = "row">
+            <div class = "col-md-6"><a href = "/" class = "logo"><img src = "images/logo.png" /></a></div>
+            <div class = "col-md-6">
+                <div class = "header__contacts">
+                    <a href = "tel:+78123465527" class = "header__phone">+7 (812) 346-55-27</a>
+                    <a href = "javascript:void(0);" popup-target = "usagr-pp" class = "order__call">Закажите звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <ul class = "top__menu">
+                    <li class = "active"><a href = "">Компания</a></li>
+                    <li><a href = "">Каталог оборудования</a></li>
+                    <li><a href = "">Услуги</a></li>
+                    <li class = "active"><a href = "">Портфолио</a></li>
+                    <li><a href = "">Обучение</a></li>
+                    <li><a href = "">Клиенты и партнеры</a></li>
+                    <li><a href = "">Новости</a></li>
+                    <li><a href = "">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class = "card">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <ol class = "breadcrumb">
+                    <li><a href = "">Главная</a></li>
+                    <li><a href = "">Каталог оборудования</a></li>
+                    <li><a href = "">Изображение</a></li>
+                    <li><a href = "">Цифровые кинопроекторы</a></li>
+                </ol>
+            </div>
+            <div class = "col-md-12">
+                <h1>Barco DP2K-10S</h1>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-4 col-sm-4">
+                <div class = "card-img-big"><img src = "images/projector.jpg" /></div>
+                <div id = "slider_preview" class = "owl-carousel">
+                    <div class = "item">
+                        <a class = "card__preview" href = "javascript:void(0);" img = "images/projector.jpg"><img src = "images/projector.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "card__preview" href = "javascript:void(0);" img = "images/project2.jpg"><img src = "images/project2.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "card__preview" href = "javascript:void(0);" img = "images/project3.jpg"><img src = "images/project3.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "card__preview" href = "javascript:void(0);" img = "images/project4.jpg"><img src = "images/project4.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-6 col-sm-6">
+                <div class = "card-desc">
+                     <p>Совершенно новый кинопроектор DP2K-10S, на базе нового DLP Cinema® чипа S2K размером 0.69 дюйма от Texas Instruments®, разработан с нуля специально для небольших кинотеатров, залов для показа "независимого" кино и арт-хаусов. DP2K-10S не только самый доступный кинопроектор на рынке, но и самый яркий проектор в своей категории. </p>
+                     <p>Barco DP2K-10S является первым цифровым кинопроектором, оснащенным новым чипом DLP Cinema® S2K размером 0,69 дюйма, прошедший DCI сертификацию.</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-2">
+                <div class = "card-img-brand"><img src = "images/barco.jpg" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "characteristics">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <ul class = "tabs">
+                    <li class = "active"><a href = "javascript:void(0);" tab = "tab_1">Преимущества</a></li>
+                    <li><a href = "javascript:void(0);" tab = "tab_2">Технические характеристики</a></li>
+                    <li><a href = "javascript:void(0);" tab = "tab_3">Документация</a></li>
+                    <li><a href = "javascript:void(0);" tab = "tab_4">Задайте ваш вопрос</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "tab_1" class = "tabs__content">
+                    <p><b>Самый доступный DLP Cinema® проектор на рынке</b><br/>
+                        На сегодняшний день DP2K-10S является самым недорогим DLP Cinema® проектором на рынке. В комплектацию входит высококачественный кинопроекционный объектив и короткодуговая ксеноновая лампа мощностью 2.2 кВт. Также возможна покупка комплекта Barco DP2K-10Sx с интегрированным медиасервером IMS-1000 от компании Doremi Labs.</p>
+                    <p><b>Низкая стоимость владения</b><br/>
+                        Во время разработки DP2K-10S особое внимание было уделено снижению стоимости эксплуатации. Поэтому все основные компоненты спроектированы с учетом простоты обслуживания и продолжительного срока службы.</p>
+                    <p><b>Простота обслуживания</b><br/>
+                        Полностью модульная конструкция проектора DP2K-10S облегчает его использование. Использование такой конструкции позволило значительно сократить время простоя и потребность в запчастях, а также ускорить процесс обучения персонала, что привело к существенному снижению стоимости владения.</p>
+                    <div class = "characteristics__adv">
+                        <p>Максимально возможная яркость в своем классе благодаря превосходной оптической эффективности, запатентованному герметичному "лайт-энжину" и его охлаждающей системе</p>
+                        <p>Яркие и насыщенные цвета со стандартной ксеноновой лампой</p>
+                        <p>Четкая картинка на протяжение всего срока службы благодаря уникальному механизму ручного сведения цветов как в больших кинопроекторах Barco</p>
+                        <p>Полная совместимость со всеми встраиваемыми и внешними 3D системами и широчайшие возможности воспроизведения альтернативного контента</p>
+                        <p>Идеальное соотношение сторон для любого экрана благодаря большому выбору моторизованных объективов</p>
+                        <p>Высокая мобильность, простая установка и сервис за счет интегрированных ручек, интуитивно понятного программного обеспечения и продуманной модульной архитектуре</p>
+                        <p>Минимальная стоимость владения вследствие применения энергоэффективных ксеноновых ламп, энергосберегающему режиму ожидания, фильтров многоразового использования и универсальным модулями с другими проекторами Barco</p>
+                    </div>
+                </div>
+                <div id = "tab_2" class = "tabs__content"></div>
+                <div id = "tab_3" class = "tabs__content"></div>
+                <div id = "tab_4" class = "tabs__content"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <h2>Контактная информация</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "contacts__wrap">
+                    <p class = "footer__addr">191024, Санкт-Петербург, ул. 5-я Советская, д. 45, офис 104-108</p>
+                    <a class = "footer__phone" href = "tel:+78123465527">Тел.: (812) 346-55-27</a>
+                    <a class = "footer__email" href = "mailto:info@krisberg.ru">E-mail: info@krisberg.ru</a>
+                    <a class = "footer__show__map" popup-target = "map-pp" href = "javascript:void(0);">Показать карту</a>
+                    <ul class = "solcial">
+                        <li><a href = ""><img src = "images/inst.png" /></a></li>
+                        <li><a href = ""><img src = "images/fb.png" /></a></li>
+                        <li><a href = ""><img src = "images/yt.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <ul class = "copyright">
+                    <li>© 2018 Крисберг. Все права защищены. </li>
+                    <li><a href = "">Разработка сайта Colortime</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

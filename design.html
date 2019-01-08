@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.theme.default.css">
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+
+    <link rel="stylesheet" type="text/css" href="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+
+
+    <title>Главная</title>
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+
+<div class = "overlay"></div>
+
+<div class="popup usagr-pp">
+    <a class="close1" href="#">X</a>
+    <div class="head">Заказ обратного звонка</div>
+    <form method = "POST" action = "">
+        <input type = "text" name = "name" placeholder = "Ваше имя*"/>
+        <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон*"/>
+        <input type = "submit" class = "send_mess" value = "Отправить"/>
+    </form>
+</div>
+
+<div class="popup map-pp">
+    <a class="close1" href="#">X</a>
+    <div id = "mapfirm"></div>
+</div>
+
+<div class = "float__menu">
+    <a class = "hide__menu" href = "javascript:void(0);">X</a>
+    <ul>
+        <li><a href = "">Компания</a></li>
+        <li><a href = "">Каталог оборудования</a></li>
+        <li><a href = "">Услуги</a></li>
+        <li><a href = "">Портфолио</a></li>
+        <li><a href = "">Обучение</a></li>
+        <li><a href = "">Клиенты и партнеры</a></li>
+        <li><a href = "">Новости</a></li>
+        <li><a href = "">Контакты</a></li>
+        <li><a href = "">Контакты</a></li>
+    </ul>
+</div>
+
+<header class = "header">
+    <div class = "container">
+        <a href = "javascript:void(0);" class = "show_menu"><img src = "images/gamburger.png" /></a>
+        <div class = "row">
+            <div class = "col-md-6"><a href = "/" class = "logo"><img src = "images/logo.png" /></a></div>
+            <div class = "col-md-6">
+                <div class = "header__contacts">
+                    <a href = "tel:+78123465527" class = "header__phone">+7 (812) 346-55-27</a>
+                    <a href = "javascript:void(0);" popup-target = "usagr-pp" class = "order__call">Закажите звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <ul class = "top__menu">
+                    <li><a href = "">Компания</a></li>
+                    <li><a href = "">Каталог оборудования</a></li>
+                    <li><a href = "">Услуги</a></li>
+                    <li><a href = "">Портфолио</a></li>
+                    <li><a href = "">Обучение</a></li>
+                    <li><a href = "">Клиенты и партнеры</a></li>
+                    <li><a href = "">Новости</a></li>
+                    <li><a href = "">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class = "slogan">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "slogan__text">
+                    <h1>Проектируем и открываем кинотеатры под ключ<br/>в России и странах ближнего зарубежья</h1>
+                    <p>Проектирование, монтаж и поставка цифрового оборудования, сервис и поддержка</p>
+                    <a class="order__consult" href="javascript:void(0);" popup-target="usagr-pp">Закажите консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "achieve">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">2-е</p>
+                    <p class = "achieve__item__text">место на рынке по объему цифровых инсталляций</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">110</p>
+                    <p class = "achieve__item__text">кинотеатров открыто под ключ</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">1-5</p>
+                    <p class = "achieve__item__text">лет гарантия на оборудование</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">&#8381;</p>
+                    <p class = "achieve__item__text">минимальная цена на оборудование и сервис</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">1900</p>
+                    <p class = "achieve__item__text">проекторов установлено</p>
+                </div>
+            </div>
+            <div class = "col-md-2 col-sm-4 col-xs-6 col-achieve">
+                <div class = "achieve__item">
+                    <p class = "achieve__item__name">24/7</p>
+                    <p class = "achieve__item__text">поддержка клиентов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "history">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3">
+                <p class = "work__year">Мы работаем для вас с <span>2008</span></p>
+            </div>
+            <div class = "col-md-5">
+                <div class = "history__about">
+                    <p>Компания «Крисберг» была основана в 2008 году и на сегодняшний день является крупной, стабильно развивающейся торгово-проектной компанией, профессионалом своего дела. За время работы нами запущено более 110 кинозалов по всей России.</p>
+                    <p>Центральныи офис находится в Санкт-Петербурге. </p>
+                    <p>В Екатеринбурге работает представительство компании.</p>
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <p class = "profil__head">Основное направление деятельности</p>
+                <p class = "profil__text">Поставка и инсталляция цифрового кинопроекционного оборудования и звуковоспроизводящих систем для кинотеатров, последующее обслуживание установленного оборудования, поставка комплектующих и расходных материалов.</p>
+                <a class = "profil__link" href = "">подробно о компании</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "activity">
+    <h2>Сферы деятельности</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "activity__list">
+                    <a href = "" class = "activity__list__item">
+                        <img src = "images/d1.png" />
+                        <div class = "activity__list__item__wrap">
+                            <p class = "activity__list__item__head">Поставка оборудования</p>
+                            <p class = "activity__list__item__text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. </p>
+                        </div>
+                    </a>
+                    <a href = "" class = "activity__list__item">
+                        <img src = "images/d2.png" />
+                        <div class = "activity__list__item__wrap">
+                            <p class = "activity__list__item__head">Проектирование и дизайн-проектирование</p>
+                            <p class = "activity__list__item__text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. </p>
+                        </div>
+                    </a>
+                    <a href = "" class = "activity__list__item">
+                        <img src = "images/d3.png" />
+                        <div class = "activity__list__item__wrap">
+                            <p class = "activity__list__item__head">Техническая поддержка</p>
+                            <p class = "activity__list__item__text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                        </div>
+                    </a>
+                    <a href = "" class = "activity__list__item">
+                        <img src = "images/d4.png" />
+                        <div class = "activity__list__item__wrap">
+                            <p class = "activity__list__item__head">Разработка ситемы ТМС</p>
+                            <p class = "activity__list__item__text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                        </div>
+                    </a>
+                    <a href = "" class = "activity__list__item">
+                        <img src = "images/d5.png" />
+                        <div class = "activity__list__item__wrap">
+                            <p class = "activity__list__item__head">Управление кинотеатрами</p>
+                            <p class = "activity__list__item__text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "adv">
+    <h2>Пять причин<br/>начать работать с нами</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "adv_list">
+                    <a href = "javascript:void(0);" class = "adv__item active" id = "adv__item1">
+                        <img src = "images/1.png" />
+                        <p>Поддержка клиентов<br/>24 / 7</p>
+                    </a>
+
+                    <a href = "javascript:void(0);" class = "adv__item" id = "adv__item2">
+                        <img src = "images/2.png" />
+                        <p>Индивидуальный<br/>подход</p>
+                    </a>
+
+                    <a href = "javascript:void(0);" class = "adv__item" id = "adv__item3">
+                        <img src = "images/3.png" />
+                        <p>Профессионализм<br/>и свежие идеи</p>
+                    </a>
+
+                    <a href = "javascript:void(0);" class = "adv__item" id = "adv__item4">
+                        <img src = "images/4.png" />
+                        <p>Минимальная цена<br/>на оборудование</p>
+                    </a>
+
+                    <a href = "javascript:void(0);" class = "adv__item" id = "adv__item5">
+                        <img src = "images/5.png" />
+                        <p>Партнерство<br/>с Barco</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider_adv" class = "owl-carousel">
+                    <div class = "item">
+                        <div class = "slider_adv_item">
+                            <div class = "row">
+                                <div class = "col-md-4">
+                                    <img src = "images/t.jpg" />
+                                </div>
+                                <div class = "col-md-8">
+                                    <p class = "slider_adv_item_head">Индивидуальный подход</p>
+                                    <p class = "slider_adv_item_text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                                    <p class = "slider_adv_item_formhead">Возникли вопросы?<br/>Получите индивидуальную консультацию:</p>
+                                    <div class = "slider_form">
+                                        <form method = "POST" action = "">
+                                            <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон"/>
+                                            <a href = "javascript:void(0);" class = "order_consult">получить консультацию</a>
+                                            <a class="checkbox" stat="check" href="javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "slider_adv_item">
+                            <div class = "row">
+                                <div class = "col-md-4">
+                                    <img src = "images/t.jpg" />
+                                </div>
+                                <div class = "col-md-8">
+                                    <p class = "slider_adv_item_head">Индивидуальный подход</p>
+                                    <p class = "slider_adv_item_text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                                    <p class = "slider_adv_item_formhead">Возникли вопросы?<br/>Получите индивидуальную консультацию:</p>
+                                    <div class = "slider_form">
+                                        <form method = "POST" action = "">
+                                            <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон"/>
+                                            <a href = "javascript:void(0);" class = "order_consult">получить консультацию</a>
+                                            <a class="checkbox" stat="check" href="javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "slider_adv_item">
+                            <div class = "row">
+                                <div class = "col-md-4">
+                                    <img src = "images/t.jpg" />
+                                </div>
+                                <div class = "col-md-8">
+                                    <p class = "slider_adv_item_head">Индивидуальный подход</p>
+                                    <p class = "slider_adv_item_text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                                    <p class = "slider_adv_item_formhead">Возникли вопросы?<br/>Получите индивидуальную консультацию:</p>
+                                    <div class = "slider_form">
+                                        <form method = "POST" action = "">
+                                            <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон"/>
+                                            <a href = "javascript:void(0);" class = "order_consult">получить консультацию</a>
+                                            <a class="checkbox" stat="check" href="javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "slider_adv_item">
+                            <div class = "row">
+                                <div class = "col-md-4">
+                                    <img src = "images/t.jpg" />
+                                </div>
+                                <div class = "col-md-8">
+                                    <p class = "slider_adv_item_head">Индивидуальный подход</p>
+                                    <p class = "slider_adv_item_text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                                    <p class = "slider_adv_item_formhead">Возникли вопросы?<br/>Получите индивидуальную консультацию:</p>
+                                    <div class = "slider_form">
+                                        <form method = "POST" action = "">
+                                            <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон"/>
+                                            <a href = "javascript:void(0);" class = "order_consult">получить консультацию</a>
+                                            <a class="checkbox" stat="check" href="javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "slider_adv_item">
+                            <div class = "row">
+                                <div class = "col-md-4">
+                                    <img src = "images/t.jpg" />
+                                </div>
+                                <div class = "col-md-8">
+                                    <p class = "slider_adv_item_head">Индивидуальный подход</p>
+                                    <p class = "slider_adv_item_text">В кинотеатре устанавливается специализированная система автоматизации, контроля и видеонаблюдения, которая подключается ко всему кинооборудованию, и через выделенную линию интернета к серверу нашей компании. Это позволяет нашим инженерам удаленно выполнять функции киномехаников и следить за состоянием оборудования.</p>
+                                    <p class = "slider_adv_item_formhead">Возникли вопросы?<br/>Получите индивидуальную консультацию:</p>
+                                    <div class = "slider_form">
+                                        <form method = "POST" action = "">
+                                            <input type = "text" name = "phone" class = "phone" placeholder = "Ваш телефон"/>
+                                            <a href = "javascript:void(0);" class = "order_consult">получить консультацию</a>
+                                            <a class="checkbox" stat="check" href="javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "catalog catalog__index">
+    <h2>Каталог оборудования</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3 col-sm-6 col-xs-6 col-serv">
+                <div class = "catalog__item">
+                    <img src = "images/c1.jpg" />
+                    <div class = "stick"><img src = "images/stick.jpg" /></div>
+                    <div class = "catalog__item__wrap">
+                        <p class = "catalog__item__head">Изображение</p>
+                        <ul class = "catalog__item__list">
+                            <li><a href = "">Цифровые кинопроекторы</a></li>
+                            <li><a href = "">Cерверы</a></li>
+                            <li><a href = "">3D системы</a></li>
+                            <li><a href = "">Киноэкраны</a></li>
+                            <li><a href = "">Масштабаторы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-3 col-sm-6 col-xs-6 col-serv">
+                <div class = "catalog__item">
+                    <img src = "images/c2.jpg" />
+                    <div class = "stick"><img src = "images/stick.jpg" /></div>
+                    <div class = "catalog__item__wrap">
+                        <p class = "catalog__item__head">Звук</p>
+                        <ul class = "catalog__item__list">
+                            <li><a href = "">Громкоговорители</a></li>
+                            <li><a href = "">Усилители</a></li>
+                            <li><a href = "">Усилители</a></li>
+                            <li><a href = "">Акустический кабель</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-3 col-sm-6 col-xs-6 col-serv">
+                <div class = "catalog__item">
+                    <img src = "images/c3.jpg" />
+                    <div class = "stick"><img src = "images/stick.jpg" /></div>
+                    <div class = "catalog__item__wrap">
+                        <p class = "catalog__item__head">Кинозал</p>
+                        <ul class = "catalog__item__list">
+                            <li><a href = "">Кресла и "лавситы"</a></li>
+                            <li><a href = "">Подсветка ступеней</a></li>
+                            <li><a href = "">Темнители</a></li>
+                            <li><a href = "">Устройства автоматизации</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-3 col-sm-6 col-xs-6 col-serv">
+                <div class = "catalog__item">
+                    <img src = "images/c4.jpg" />
+                    <div class = "stick"><img src = "images/stick.jpg" /></div>
+                    <div class = "catalog__item__wrap">
+                        <p class = "catalog__item__head">Расходные материалы</p>
+                        <ul class = "catalog__item__list">
+                            <li><a href = "">Ксеноновые лампы</a></li>
+                            <li><a href = "">Ксеноновые лампы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "news">
+    <h2>Новости компании и индустрии</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider__news" class = "owl-carousel">
+                    <div class = "item">
+                        <a href = "" class = "news__item">
+                            <img src = "images/new2.jpg" />
+                            <p class = "news__item__date">14 Сентября 2018</p>
+                            <p class = "news__item__text">XIV международный форум и выставка «КИНО ЭКСПО» состоится 17 – 21 сентября 2012 г. в Санкт-Петербурге, в павильоне № 7 выставочного комплекса «Ленэкспо». Выставка "КИНО ЭКСПО" откроется 18 сентября 2012 г.</p>
+                        </a>
+                    </div>
+                    <div class = "item">
+                        <a href = "" class = "news__item">
+                            <img src = "images/new1.jpg" />
+                            <p class = "news__item__date">14 Сентября 2018</p>
+                            <p class = "news__item__text">XIV международный форум и выставка «КИНО ЭКСПО» состоится 17 – 21 сентября 2012 г. в Санкт-Петербурге, в павильоне № 7 выставочного комплекса «Ленэкспо». Выставка "КИНО ЭКСПО" откроется 18 сентября 2012 г.</p>
+                        </a>
+                    </div>
+                    <div class = "item">
+                        <a href = "" class = "news__item">
+                            <img src = "images/new2.jpg" />
+                            <p class = "news__item__date">14 Сентября 2018</p>
+                            <p class = "news__item__text">XIV международный форум и выставка «КИНО ЭКСПО» состоится 17 – 21 сентября 2012 г. в Санкт-Петербурге, в павильоне № 7 выставочного комплекса «Ленэкспо». Выставка "КИНО ЭКСПО" откроется 18 сентября 2012 г.</p>
+                        </a>
+                    </div>
+                    <div class = "item">
+                        <a href = "" class = "news__item">
+                            <img src = "images/new1.jpg" />
+                            <p class = "news__item__date">14 Сентября 2018</p>
+                            <p class = "news__item__text">XIV международный форум и выставка «КИНО ЭКСПО» состоится 17 – 21 сентября 2012 г. в Санкт-Петербурге, в павильоне № 7 выставочного комплекса «Ленэкспо». Выставка "КИНО ЭКСПО" откроется 18 сентября 2012 г.</p>
+                        </a>
+                    </div>
+                    <div class = "item">
+                        <a href = "" class = "news__item">
+                            <img src = "images/new2.jpg" />
+                            <p class = "news__item__date">14 Сентября 2018</p>
+                            <p class = "news__item__text">XIV международный форум и выставка «КИНО ЭКСПО» состоится 17 – 21 сентября 2012 г. в Санкт-Петербурге, в павильоне № 7 выставочного комплекса «Ленэкспо». Выставка "КИНО ЭКСПО" откроется 18 сентября 2012 г.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "reviews index_reviews">
+    <h2>Отзывы и благодарственные письма</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider_reviews" class = "owl-carousel">
+                    <div class = "item reviews__item">
+                        <img style = "width: 24px;" src = "images/birds.jpg" />
+                        <div class = "row">
+                            <div class = "col-md-8">
+                                <p>Начинал я с ремонта автомобилей отечественного производства еще много лет назад простым автослесарем. И работал до тех пор, пока про наши машины не узнал совершенно все. Потом начал предлагать свои услуги в других автослесарных мастерских. И в итоге дошел до того, что открыл свой автосервис по ремонту мерседесов. Знакомые ребята подсказали, что предприятие можно открыть через компанию Мостакс. Они регистрируют ИП, принимают на работу сотрудников, составляют трудовой договор. Я в конечном счете доверил им полностью вести кадровый учет. Работу выполняют без запинок. </p>
+                                <p><b>Кинотеатр “Слава”</b></p>
+                            </div>
+                            <div class = "col-md-4">
+                                <div class = "reviews__item__img"><img src = "images/pismo.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "item reviews__item">
+                        <img style = "width: 24px;" src = "images/birds.jpg" />
+                        <div class = "row">
+                            <div class = "col-md-8">
+                                <p>Начинал я с ремонта автомобилей отечественного производства еще много лет назад простым автослесарем. И работал до тех пор, пока про наши машины не узнал совершенно все. Потом начал предлагать свои услуги в других автослесарных мастерских. И в итоге дошел до того, что открыл свой автосервис по ремонту мерседесов. Знакомые ребята подсказали, что предприятие можно открыть через компанию Мостакс. Они регистрируют ИП, принимают на работу сотрудников, составляют трудовой договор. Я в конечном счете доверил им полностью вести кадровый учет. Работу выполняют без запинок. </p>
+                                <p><b>Кинотеатр “Слава”</b></p>
+                            </div>
+                            <div class = "col-md-4">
+                                <div class = "reviews__item__img"><img src = "images/pismo.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "command">
+    <h2>Команда профессионалов</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider_command" class = "owl-carousel">
+                    <div class = "item">
+                        <div class = "command__item">
+                            <img src = "images/numen.jpg" />
+                            <p class = "command__item__name">Константин Александров</p>
+                            <p class = "command__item__post"><a>Инженер</a></p>
+                            <p class = "command__item__text">Приятно, граждане, наблюдать, как диаграммы связей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. </p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "command__item">
+                            <img src = "images/numen.jpg" />
+                            <p class = "command__item__name">Константин Александров</p>
+                            <p class = "command__item__post"><a>Инженер</a></p>
+                            <p class = "command__item__text">Приятно, граждане, наблюдать, как диаграммы связей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. </p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "command__item">
+                            <img src = "images/numen.jpg" />
+                            <p class = "command__item__name">Константин Александров</p>
+                            <p class = "command__item__post"><a>Инженер</a></p>
+                            <p class = "command__item__text">Приятно, граждане, наблюдать, как диаграммы связей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. </p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "command__item">
+                            <img src = "images/numen.jpg" />
+                            <p class = "command__item__name">Константин Александров</p>
+                            <p class = "command__item__post"><a>Инженер</a></p>
+                            <p class = "command__item__text">Приятно, граждане, наблюдать, как диаграммы связей могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "clients clients_index">
+    <h2>Наши клиенты на карте</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "map" class = "ya__maps"></div>
+                <div id = "map1" class = "ya__maps"></div>
+                <div id = "map2" class = "ya__maps"></div>
+                <div id = "map3" class = "ya__maps"></div>
+                <div id = "map4" class = "ya__maps"></div>
+                <div id = "map5" class = "ya__maps"></div>
+                <div id = "map6" class = "ya__maps"></div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider_clients" class = "owl-carousel">
+                    <div class = "item">
+                        <a class = "client" map = "map1" href = "javascript:void(0);"><img src = "images/p1.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map2" href = "javascript:void(0);"><img src = "images/p2.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map3" href = "javascript:void(0);"><img src = "images/p3.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map4" href = "javascript:void(0);"><img src = "images/p4.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map5" href = "javascript:void(0);"><img src = "images/p5.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map6" href = "javascript:void(0);"><img src = "images/p6.jpg" /></a>
+                    </div>
+                    <div class = "item">
+                        <a class = "client" map = "map1" href = "javascript:void(0);"><img src = "images/p1.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "partners partners_index">
+    <h2>Партнеры</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div id = "slider_partners" class = "owl-carousel">
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k1.jpg" />
+                            <p>Leaders in Screen Technology for Cinema and Events. For over 85 years, we've been at the forefront of technology providing cinema screens and events screens that enhance every projection experience.</p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k2.jpg" />
+                            <p>Располагая портфелем из 18 цифровых кинопроекторов, компания Barco предлагает самый полный в отрасли диапазон сертифицированных по DCI ксеноновых и лазерных кинопроекторов, которые переносят в жизнь волшебную атмосферу кино. </p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k3.jpg" />
+                            <p>Dolby оживляет ощущения. Компания Dolby использует достижения на стыке науки и искусства для создания новаторских решений в области аудио, видео и голоса.</p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k1.jpg" />
+                            <p>Leaders in Screen Technology for Cinema and Events. For over 85 years, we've been at the forefront of technology providing cinema screens and events screens that enhance every projection experience.</p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k2.jpg" />
+                            <p>Располагая портфелем из 18 цифровых кинопроекторов, компания Barco предлагает самый полный в отрасли диапазон сертифицированных по DCI ксеноновых и лазерных кинопроекторов, которые переносят в жизнь волшебную атмосферу кино. </p>
+                        </div>
+                    </div>
+                    <div class = "item">
+                        <div class = "pertners__item">
+                            <img src = "images/k3.jpg" />
+                            <p>Dolby оживляет ощущения. Компания Dolby использует достижения на стыке науки и искусства для создания новаторских решений в области аудио, видео и голоса.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class = "faq faq_index">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-3">
+                <p style = "font-size: 72px; font-family: 'PTSansNarrowBold';">FAQ</p>
+            </div>
+            <div class = "col-md-5">
+                <div class = "faq__list">
+                    <a class = "faq__link" faq = "faq_1" href = "javascript:void(0);">Как установить цифровое оборудование?</a>
+                    <div id = "faq_1" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                    <a class = "faq__link" faq = "faq_2" href = "javascript:void(0);">Как открыть кинотеатр с нуля?</a>
+                    <div id = "faq_2" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                    <a class = "faq__link" faq = "faq_3" href = "javascript:void(0);">Что делать если фильм остановился?</a>
+                    <div id = "faq_3" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                    <a class = "faq__link" faq = "faq_4" href = "javascript:void(0);">Как установить цифровое оборудование?</a>
+                    <div id = "faq_4" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                    <a class = "faq__link" faq = "faq_5" href = "javascript:void(0);">Как открыть кинотеатр с нуля?</a>
+                    <div id = "faq_5" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                    <a class = "faq__link" faq = "faq_5" href = "javascript:void(0);">Что делать если фильм остановился?</a>
+                    <div id = "faq_5" class = "faq__test">
+                        <p>Есть над чем задуматься: базовые сценарии поведения пользователей являются только методом политического участия и разоблачены. Но повышение уровня гражданского сознания является качественно новой ступенью как самодостаточных, так и внешне зависимых концептуальных решений. Современные технологии достигли такого уровня, что экономическая повестка сегодняшнего дня требует от нас анализа приоретизации разума над эмоциями. </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-md-4">
+                <div class = "form">
+                    <p class = "form__head">Задайте ваш вопрос:</p>
+                    <form method = "POST" active = "">
+                        <textarea name = "mess" placeholder = ""></textarea>
+                        <input type = "text" name = "phone" placeholder = "Телефон, WhatsApp или Viber"/>
+                        <input type = "text" name = "email" placeholder = "E-mail"/>
+                        <img src = "images/recaptcha.jpg" />
+                        <a class = "send__from" href = "javascript:void(0);">задать вопрос</a>
+                        <a class = "checkbox" stat = "check" href = "javascript:void(0);">Нажимая кнопку "Задать вопрос", я даю своё согласие на обработку моих персональных данных</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer">
+    <h2>Контактная информация</h2>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class = "contacts__wrap">
+                    <p class = "footer__addr">191024, Санкт-Петербург, ул. 5-я Советская, д. 45, офис 104-108</p>
+                    <a class = "footer__phone" href = "tel:+78123465527">Тел.: (812) 346-55-27</a>
+                    <a class = "footer__email" href = "mailto:info@krisberg.ru">E-mail: info@krisberg.ru</a>
+                    <a class = "footer__show__map" popup-target = "map-pp" href = "javascript:void(0);">Показать карту</a>
+                    <ul class = "solcial">
+                        <li><a href = ""><img src = "images/inst.png" /></a></li>
+                        <li><a href = ""><img src = "images/fb.png" /></a></li>
+                        <li><a href = ""><img src = "images/yt.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12">
+                <ul class = "copyright">
+                    <li>© 2018 Крисберг. Все права защищены. </li>
+                    <li><a href = "">Разработка сайта Colortime</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="plugins/owl-carousel/owl.carousel.js"></script>
+<script src="plugins/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="plugins/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<script src="plugins/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript" src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
